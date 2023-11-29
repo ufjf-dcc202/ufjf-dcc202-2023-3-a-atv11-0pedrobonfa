@@ -7,6 +7,11 @@ function getLista()
 
 export function limparLista()
 {
-    lista.splice(0,3);
+    lista.splice(0);
+}
+
+export function adicionaNaLista(novoItem)
+{
+    lista.push(novoItem)
 }
 export {getLista};
