@@ -1,6 +1,6 @@
 const lista = ["Um", "Dois", "Três"];
 
-function.getlista()
+function getLista()
 {
     return lista;
 }
