@@ -12,13 +12,12 @@ export function limpaLista()
 
 export function adicionaNaLista(novoItem)
 {
-    lista.push(novoItem)
+    lista.push(novoItem);
 }
 
-export function removeDaLista(itemDaLista)
+export function removeDaLista()
 {
-    if (((itemDaLista >= 0) && (itemDaLista < lista.length))) {
-        lista.splice(itemDaLista, 1);
-    }
+    lista.splice(1, 1);
 }
+
 export {getLista};

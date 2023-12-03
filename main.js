@@ -4,10 +4,11 @@ const pEntrada = document.querySelector('#entrada');
 const olSaida = document.querySelector('#itens');
 const btnAdicionar = document.querySelector('#adicionar');
 const btnLimpar = document.querySelector('#limpar');
+const btnRemover = document.querySelector('#remover');
 
 btnLimpar.addEventListener('click', limparElementosDaLista);
 btnAdicionar.addEventListener('click', criaElementoNaLista);
-
+btnRemover.addEventListener('click', removeElementoDaLista)
 atualizarItensDeLista();
 
 function criaElementoNaLista()
@@ -36,4 +37,10 @@ function atualizarItensDeLista()
         li.textContent = item;
         olSaida.appendChild(li);
     }
+}
+
+function removeElementoDaLista()
+{
+    removeDaLista();
+    atualizarItensDeLista();
 }
