@@ -1,6 +1,5 @@
 
-import { adicionaNaLista, getLista, limparLista } from "./lista.js";
-//Passo 1 - Ache os elementos importantes
+import { adicionaNaLista, getLista, limpaLista, removeDaLista } from "./lista.js";
 const pEntrada = document.querySelector('#entrada');
 const olSaida = document.querySelector('#itens');
 const btnAdicionar = document.querySelector('#adicionar');
@@ -22,7 +21,7 @@ function criaElementoNaLista()
 
 function limparElementosDaLista()
 {
-    limparLista();
+    limpaLista();
     atualizarItensDeLista();
 }
 
